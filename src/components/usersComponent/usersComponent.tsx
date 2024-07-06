@@ -21,7 +21,7 @@ const UsersComponent = () => {
 
     const getPosts = (id: number) => {
         getPostsOfUserById(id).then((data) => {
-            setPosts([...data.posts]);
+            setPosts([...data]);
         });
     };
 
